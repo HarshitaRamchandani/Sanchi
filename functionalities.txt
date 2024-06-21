@@ -1,0 +1,55 @@
+Functionalities Implemented in the Sanchi Project:
+
+1. User Authentication:
+   - Implements authentication using Angular's `AuthService`.
+   - Uses reactive forms for the login form and authentication guards (`AuthGuard`) to protect routes.
+   - Utilizes HTTP interceptors to attach authentication tokens for authorized requests.
+   - Persists user login state using `localStorage` for session persistence.
+
+2. Angular Service:
+   - `ProductService` and `CartService` utilize Angular's dependency injection.
+   - Fetch data from mock JSONs (`src/assets/json`) for product listings and cart management.
+   - CartService uses `localStorage` to persist cart state across sessions.
+
+3. Reactive Forms and Form Arrays:
+   - Implemented in the Product Listing Page (`src/app/components/product-listing`).
+   - Allows dynamic handling of product requests and variants.
+
+4. Angular Directive:
+   - `Add to Cart` directive displays an popup that enhances user experience.
+   - Triggered when users click the "Add to Cart" button on any of the pages.
+
+5. Mock JSON Data:
+   - Self-prepared mock JSONs located in `src/assets/json` containing product data, user data.
+
+6. Responsive Design:
+   - Utilizes Bootstrap grid system and media queries for responsive layout.
+   - Ensures consistent user experience across various devices.
+
+7. Sorting of Products:
+   - Implements sorting functionality based on price in the Product Listing Page.
+   - Allows users to sort products in ascending or descending order.
+
+8. Highest Rated Product Calculation:
+   - API fetches highest-rated products from each category to display on the homepage.
+   - Enhances user engagement by showcasing top-rated items.
+
+9. Shopping Cart Features:
+   - Allows adding and removing products from the cart.
+   - Persists cart state using `localStorage` for seamless user experience, even after browser closure.
+   - Handles empty cart scenarios by giving users option of redirecting back to the homepage.
+
+10. Checkout Process:
+    - Implements checkout functionality with a simulated timeout redirect to the homepage.
+
+11. Dependency Injection:
+    - Utilizes Angular's dependency injection for injecting services (`ProductService`, `CartService`) into components.
+    - Ensures modular and maintainable codebase by managing dependencies effectively.
+
+Locations:
+- Authentication: `src/app/services/authentication`
+- Product Listing Page: `src/app/components/product-listing`
+- Directive: `src/app/directives/`
+- Mock JSON Data: `src/assets/json`
+- Shopping Cart & Checkout: `src/app/components/shopping-cart`
+- Dependency Injection: Throughout service and component hierarchy

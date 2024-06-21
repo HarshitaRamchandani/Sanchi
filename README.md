@@ -15,6 +15,10 @@ To access the cart functionality in this application, login is required. Please 
 
 Once logged in, you will be able to use the cart feature to add and manage products.
 
+---
+
+For details on implemented functionalities, please read `functionalities.txt`.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
