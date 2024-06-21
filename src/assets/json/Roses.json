@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "title": "Red Rose",
+      "price": 99.99,
+      "category": "roses",
+      "description": "A passionate red rose bouquet, symbolizing deep love and respect.",
+      "image": "/assets/images/roses/1.jpg",
+      "Rating": {
+        "count": 10,
+        "rate": 4.9
+      }
+    },
+    {
+      "id": 2,
+      "title": "Lavender Roses Bouquet",
+      "price": 399.99,
+      "category": "roses",
+      "description": "An enchanting bouquet of lavender roses, representing grace and elegance.",
+      "image": "/assets/images/roses/2.jpg",
+      "Rating": {
+        "count": 15,
+        "rate": 4.8
+      }
+    },
+    {
+      "id": 3,
+      "title": "Peach Roses Bouquet",
+      "price": 299.99,
+      "category": "roses",
+      "description": "A beautiful bouquet of peach roses, perfect for showing gratitude and appreciation.",
+      "image": "/assets/images/roses/3.jpg",
+      "Rating": {
+        "count": 15,
+        "rate": 4.8
+      }
+    },
+    {
+      "id": 4,
+      "title": "White Roses Bouquet",
+      "price": 109.99,
+      "category": "roses",
+      "description": "Elegant white roses arranged beautifully in a glass vase, symbolizing purity and innocence.",
+      "image": "/assets/images/roses/4.jpg",
+      "Rating": {
+        "count": 20,
+        "rate": 4.9
+      }
+    },
+    {
+      "id": 5,
+      "title": "Pink Roses Bouquet",
+      "price": 179.99,
+      "category": "roses",
+      "description": "A charming bouquet of pink roses, perfect for expressing admiration and joy.",
+      "image": "/assets/images/roses/5.jpg",
+      "Rating": {
+        "count": 25,
+        "rate": 4.7
+      }
+    },
+    {
+      "id": 6,
+      "title": "Red Roses Bouquet",
+      "price": 199.99,
+      "category": "roses",
+      "description": "A stunning bouquet of red roses, ideal for romantic occasions.",
+      "image": "/assets/images/roses/6.jpg",
+      "Rating": {
+        "count": 30,
+        "rate": 4.8
+      }
+    },
+    {
+      "id": 7,
+      "title": "Yellow Roses Bouquet",
+      "price": 279.99,
+      "category": "roses",
+      "description": "A vibrant bouquet of yellow roses, symbolizing friendship and joy.",
+      "image": "/assets/images/roses/7.jpg",
+      "Rating": {
+        "count": 18,
+        "rate": 4.6
+      }
+    },
+    {
+      "id": 8,
+      "title": "Light Pink Roses Bouquet",
+      "price": 399.99,
+      "category": "roses",
+      "description": "A delicate bouquet of light pink roses, representing sweetness and grace.",
+      "image": "/assets/images/roses/8.jpg",
+      "Rating": {
+        "count": 22,
+        "rate": 4.7
+      }
+    }
+  ]
+  

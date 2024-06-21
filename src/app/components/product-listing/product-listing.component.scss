@@ -1,0 +1,153 @@
+.product-banner {
+  width: 100%;
+}
+
+.section-heading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+  font-size: 30px;
+}
+
+.product-card {
+  border: 3px solid lightgray;
+  text-align: center;
+  border-radius: 0%;
+  .product-img {
+    padding: 3%;
+  }
+  .product-title {
+    border-top: 2px solid magenta;
+    text-transform: uppercase;
+    padding-top: 8%;
+  }
+  .product-price {
+    color: magenta;
+  }
+  .product-description {
+    color: gray;
+    font-size: 14px;
+  }
+  .product-button-container {
+    padding: 5% 10%;
+    .product-button {
+      background: #ff0036;
+      cursor: pointer;
+      color: white;
+      border-radius: 12px;
+      padding: 1%;
+    }
+  }
+}
+
+.navbar-row {
+  --bs-gutter-x: 3.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-col {
+  padding-bottom: 4%;
+}
+
+.form-container {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.request-products {
+  padding: 2%;
+  border: 2px rgba(0, 0, 0, 0.488) solid;
+  border-radius: 12px;
+}
+
+.thank-you {
+  background: #ffd1d9;
+  text-align: center;
+  padding: 2%;
+  border: 2px rgba(0, 0, 0, 0.488) solid;
+  border-radius: 12px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  label {
+    flex: 1;
+    margin-right: 8px;
+  }
+  input {
+    flex: 2;
+  }
+}
+
+.green-button {
+  background: #007e43;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.red-button {
+  background: #ff0036;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.button-container {
+  padding-bottom: 2%;
+}
+.button-container2 {
+  gap: 2%;
+  display: flex;
+}
+
+.form-heading {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #343a40d2;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  bottom: 0;
+  position: fixed;
+  padding-top: 4%;
+  width: 100%;
+}
+.padding-div {
+  visibility: hidden;
+}
+
+.filter-section {
+  width: 100%;
+  padding-left: 4%;
+  padding-bottom: 1.5%;
+  gap: 14px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+.sort-button {
+  background: #f75f80;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+}

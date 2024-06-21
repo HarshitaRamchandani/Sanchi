@@ -1,0 +1,121 @@
+<div>
+  <app-navbar></app-navbar>
+
+  <div>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item"
+          [class.active]="i === 0"
+          *ngFor="let image of images; let i = index"
+        >
+          <img [src]="image" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="section-heading">Highest Rated</div>
+
+  <div class="row navbar-row">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12 pb-4"
+      *ngFor="let item of highestRatedProducts"
+    >
+      <div class="card product-card">
+        <div class="product-img">
+          <img class="card-img-top" [src]="item.image" alt="Product Image" />
+        </div>
+        <div class="product-title">{{ item.title }}</div>
+        <div class="product-price">₹ {{ item.price }}</div>
+        <div class="product-description">{{ item.description }}</div>
+        <div class="product-rating">
+          <app-star-rating [rating]="item.Rating.rate"></app-star-rating>
+        </div>
+        <div class="product-button-container">
+          <div class="product-button" (click)="addToCart(item)" appShowPopup>
+            Add to cart
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-heading">Categories</div>
+
+  <div class="row navbar-row">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12 pb-4"
+      *ngFor="let item of categories"
+    >
+      <div
+        class="card category-card"
+        [style.backgroundImage]="'url(' + item.image + ')'"
+        (click)="navigateToCategory(item.name)"
+      >
+        <div class="overlay"></div>
+        <span class="category-text"
+          >{{ item.name === "MixedFlowers" ? "Mixed Flowers" : item.name }}
+          <i class="fa-solid fa-arrow-right category-icon"></i
+        ></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-heading pb-6">Featured Specialities</div>
+  <div class="row navbar-row">
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+      <div class="card section-card">
+        <div><i class="fa-solid fa-cake-candles section-icon"></i></div>
+        <div class="section-text">Birthday & Anniversary</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+      <div class="card section-card">
+        <div><i class="fa-solid fa-money-check-dollar section-icon"></i></div>
+        <div class="section-text">Budget Friendly</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+      <div class="card section-card">
+        <div><i class="fa-solid fa-clock section-icon"></i></div>
+        <div class="section-text">Fast Delivery</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 pb-4">
+      <div class="card section-card">
+        <div><i class="fa-solid fa-users-between-lines section-icon"></i></div>
+        <div class="section-text">Bestseller</div>
+      </div>
+    </div>
+  </div>
+  <div class="padding-div">a</div>
+  <div class="footer-container">
+    <div class="footer">
+      <span>&copy; 2024 All rights reserved to Harshita Ramchandani</span>
+    </div>
+  </div>
+</div>

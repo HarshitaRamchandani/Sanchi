@@ -1,0 +1,25 @@
+<div class="main-container">
+  <div class="sub-container">
+    <div class="form-container">
+      <div class="section-heading">LOGIN</div>
+      <div class="sub-heading">Please login to access cart and checkout.</div>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="pt-2 pb-2">
+          <label for="username"><b>Username</b></label>
+        </div>
+        <div class="pt-2 pb-4">
+          <input type="text" id="username" formControlName="username" class="form-input" />
+        </div>
+
+        <div class="pt-2 pb-2">
+          <label for="password"><b>Password</b></label>
+        </div>
+        <div class="pt-2 pb-4">
+          <input type="password" id="password" formControlName="password" class="form-input"/>
+        </div>
+
+        <button type="submit" [disabled]="!loginForm.valid" class="login-button">Login</button>
+      </form>
+    </div>
+  </div>
+</div>

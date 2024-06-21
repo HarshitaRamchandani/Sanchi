@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "title": "Decadent Chocolate Cake",
+        "price": 559.99,
+        "category": "cakes",
+        "description": "A rich and indulgent chocolate cake, perfect for satisfying any chocolate lover's cravings.",
+        "image": "/assets/images/cakes/1.jpg",
+        "Rating": {
+            "count": 25,
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 2,
+        "title": "Classic Vanilla Cupcake",
+        "price": 159.99,
+        "category": "cupcakes",
+        "description": "A classic vanilla cupcake with a fluffy texture and delicious frosting, ideal for any occasion.",
+        "image": "/assets/images/cakes/2.jpg",
+        "Rating": {
+            "count": 20,
+            "rate": 4.8
+        }
+    },
+    {
+        "id": 3,
+        "title": "Elegant Macaron Cake",
+        "price": 659.99,
+        "category": "cakes",
+        "description": "An elegant macaron cake, and delicate flavors of macarons with a creamy filling.",
+        "image": "/assets/images/cakes/3.jpg",
+        "Rating": {
+            "count": 18,
+            "rate": 4.7
+        }
+    },
+    {
+        "id": 4,
+        "title": "Red Velvet Cupcake Delight",
+        "price": 189.99,
+        "category": "cupcakes",
+        "description": "A delightful red velvet cupcake, moist and fluffy with a hint of cocoa and creamy frosting.",
+        "image": "/assets/images/cakes/4.jpg",
+        "Rating": {
+            "count": 22,
+            "rate": 4.8
+        }
+    },
+    {
+        "id": 5,
+        "title": "Black Forest Cupcake Bliss",
+        "price": 179.99,
+        "category": "cupcakes",
+        "description": "A blissful black forest cupcake, with layers of chocolate cake, cherries, and whipped cream.",
+        "image": "/assets/images/cakes/5.jpg",
+        "Rating": {
+            "count": 19,
+            "rate": 4.7
+        }
+    },
+    {
+        "id": 6,
+        "title": "Blueberry Dream Cake",
+        "price": 609.99,
+        "category": "cakes",
+        "description": "A dreamy blueberry cake, bursting with fresh blueberries and topped with a luscious frosting.",
+        "image": "/assets/images/cakes/6.jpg",
+        "Rating": {
+            "count": 15,
+            "rate": 4.6
+        }
+    },
+    {
+        "id": 7,
+        "title": "Strawberry Cupcake Fantasy",
+        "price": 199.99,
+        "category": "cupcakes",
+        "description": "A fantastic strawberry cupcake, filled with fresh strawberries and topped with a sweet frosting.",
+        "image": "/assets/images/cakes/7.jpg",
+        "Rating": {
+            "count": 17,
+            "rate": 4.8
+        }
+    }
+]

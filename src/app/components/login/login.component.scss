@@ -1,0 +1,59 @@
+.main-container {
+  padding: 8%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.633);
+}
+
+.sub-container {
+  background-image: url(../../../assets/images/login-bg3.png);
+  background-color: #e8d4c9;
+  height: 100%;
+  background-size:cover;
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form-container {
+  border: 1px black solid;
+  height: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+.login-image {
+  width: 17rem;
+}
+
+.section-heading {
+    
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+  font-size: 30px;
+}
+
+.sub-heading{
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+
+}
+
+.form-input{
+    
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.login-button{
+    border: none !important;
+    border-radius:none !important;
+    background-color: rgb(73, 29, 16) !important;
+    color: white;
+    padding: 1% 8% !important;
+    font-weight: bold;
+}

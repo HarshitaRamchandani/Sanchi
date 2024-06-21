@@ -1,0 +1,72 @@
+<div>
+  <app-navbar></app-navbar>
+  <div class="banner-row">
+    <div class="shopping-banner">
+      <i class="fa-solid fa-house"></i> /
+      <span class="banner-text">Shopping Cart</span>
+
+      <span class="banner-subtext" *ngIf="cartItems.length > 0"
+        >{{ cartItems.length }} items</span
+      >
+    </div>
+  </div>
+
+  <div class="cart-empty" *ngIf="cartItems.length == 0">
+    <div class="cart-empty-text1">Shopping Cart</div>
+    <div class="cart-empty-text2">Cart is empty</div>
+    <div class="button-container">
+      <button class="red-button" (click)="navigateToHome()">
+        Continue Shopping
+      </button>
+    </div>
+  </div>
+
+  <div class="cart-container banner-row" *ngIf="cartItems.length > 0">
+    <div class="row">
+      <div class="col-12" *ngFor="let item of cartItems">
+        <div class="row item-row align-items-center">
+          <div class="col-3 col-md-2 text-center">
+            <img
+              [src]="item.image"
+              alt="{{ item.title }}"
+              height="80"
+              width="80"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-8">
+            <div class="item-title">{{ item.title }}</div>
+            <div class="item-quantity">
+              <button (click)="decreaseQuantity(item)" class="quantity-btn">
+                -
+              </button>
+              {{ item.quantity }}
+              <button (click)="increaseQuantity(item)" class="quantity-btn">
+                +
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-md-2 text-center">
+            <div class="item-price">₹ {{ item.price }}</div>
+            <div class="delete-item clickable" (click)="removeItem(item)">
+              <i class="fa-solid fa-trash"></i> Remove
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkout-container" *ngIf="cartItems.length > 0">
+    <button class="checkout-button" (click)="checkout()">
+      Checkout <i class="fa-solid fa-right-long"></i>
+    </button>
+  </div>
+
+  <div class="padding-div">a</div>
+  <div class="footer-container">
+    <div class="footer">
+      <span>&copy; 2024 All rights reserved to Harshita Ramchandani</span>
+    </div>
+  </div>
+</div>

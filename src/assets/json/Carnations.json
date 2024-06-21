@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Light Pink Carnations Bouquet",
+        "price": 399.99,
+        "category": "carnations",
+        "description": "A lovely bouquet of light pink carnations, symbolizing admiration and gratitude.",
+        "image": "/assets/images/carnations/1.jpg",
+        "Rating": {
+            "count": 12,
+            "rate": 4.8
+        }
+    },
+    {
+        "id": 2,
+        "title": "Dark Pink Carnations Bouquet",
+        "price": 359.99,
+        "category": "carnations",
+        "description": "An elegant bouquet of dark pink carnations, perfect for expressing appreciation.",
+        "image": "/assets/images/carnations/2.jpg",
+        "Rating": {
+            "count": 10,
+            "rate": 4.7
+        }
+    },
+    {
+        "id": 3,
+        "title": "White and Pink Carnations Mix",
+        "price": 399.99,
+        "category": "carnations",
+        "description": "A beautiful mix of white and pink carnations, ideal for various celebrations.",
+        "image": "/assets/images/carnations/3.jpg",
+        "Rating": {
+            "count": 15,
+            "rate": 4.9
+        }
+    },
+    {
+        "id": 4,
+        "title": "Orange and White Carnations Mix",
+        "price": 389.99,
+        "category": "carnations",
+        "description": "A vibrant mix of orange and white carnations, symbolizing enthusiasm and purity.",
+        "image": "/assets/images/carnations/4.jpg",
+        "Rating": {
+            "count": 8,
+            "rate": 4.6
+        }
+    }
+]

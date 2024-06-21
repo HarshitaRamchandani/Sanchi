@@ -1,0 +1,19 @@
+[
+    {
+        "name":"Roses",
+        "image":"/assets/images/roses/1.jpg"
+    },
+    {
+        "name":"Carnations",
+        "image":"/assets/images/carnations/1.jpg"
+    },
+    {
+        "name":"Cakes",
+        "image":"/assets/images/cakes/1.jpg"
+    },
+    {
+        "name":"MixedFlowers",
+        "image":"/assets/images/mixedflowers/1.jpg"
+    }
+
+]

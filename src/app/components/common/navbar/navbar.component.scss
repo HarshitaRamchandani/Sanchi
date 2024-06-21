@@ -1,0 +1,43 @@
+.social-media-icons {
+    gap: 10px;
+    display: flex;
+    .social-media-icon {
+      color: grey;
+    }
+  }
+  .user-icons {
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .top-banner-text {
+    color: grey;
+    font-size: 12px;
+  }
+  
+  .navbar-row {
+    --bs-gutter-x: 3.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .logo-image {
+    cursor: pointer;
+    height: 6rem;
+    padding: 10px 0;
+  }
+  
+  .top-banner {
+    background-color: #fcf5f3;
+  }
+  
+  .clickable{
+    cursor: pointer;
+  }
+
+ 

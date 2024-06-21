@@ -1,0 +1,127 @@
+<div>
+  <app-navbar></app-navbar>
+
+  <div>
+    <img
+      [src]="'/assets/images/categories/' + category + '.png'"
+      alt=""
+      srcset=""
+      class="product-banner"
+    />
+  </div>
+
+  <div class="section-heading">Products</div>
+  <div class="filter-section">
+    Sort By Price:
+    <button class="sort-button" (click)="sortByPrice('asc')">
+      Low to High
+    </button>
+    <button class="sort-button" (click)="sortByPrice('desc')">
+      High to Low
+    </button>
+  </div>
+
+  <div class="row navbar-row">
+    <div
+      class="col-12 col-sm-6 col-md-4 col-lg-3 product-col"
+      *ngFor="let item of productsList"
+    >
+      <div class="card product-card">
+        <div class="product-img">
+          <img class="card-img-top" [src]="item.image" alt="Product Image" />
+        </div>
+        <div class="product-title">{{ item.title }}</div>
+        <div class="product-price">₹ {{ item.price }}</div>
+        <div class="product-description">{{ item.description }}</div>
+
+        <div class="product-button-container">
+          <div class="product-button" (click)="addToCart(item)" appShowPopup>
+            Add to cart
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container pb-4">
+    <div class="request-products" *ngIf="!submitted">
+      <div class="form-heading text-center pb-4">
+        <i>You can custom request your orders here! </i>🌻
+      </div>
+      <form [formGroup]="productRequestForm" (ngSubmit)="onSubmit()">
+        <div formArrayName="productRequests">
+          <div *ngFor="let request of productRequests.controls; let i = index" [formGroupName]="i">
+            <div class="form-group">
+              <label for="productName-{{ i }}">Product Name</label>
+              <input
+                required
+                id="productName-{{ i }}"
+                formControlName="productName"
+                class="form-control"
+                type="text"
+              />
+              <div *ngIf="request.get('productName')?.invalid && request.get('productName')?.touched" class="text-danger">
+                Product Name is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="productQuantity-{{ i }}">Product Quantity</label>
+              <input
+                required
+                id="productQuantity-{{ i }}"
+                formControlName="productQuantity"
+                class="form-control"
+                type="number"
+              />
+              <div *ngIf="request.get('productQuantity')?.invalid && request.get('productQuantity')?.touched" class="text-danger">
+                Product Quantity is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="productColor-{{ i }}">Product Color / Flavour</label>
+              <input
+                required
+                id="productColor-{{ i }}"
+                formControlName="productColor"
+                class="form-control"
+                type="text"
+              />
+              <div *ngIf="request.get('productColor')?.invalid && request.get('productColor')?.touched" class="text-danger">
+                Product Color is required.
+              </div>
+            </div>
+          
+            <div class="button-container">
+              <button type="button" (click)="removeProductRequest(i)" class="green-button">
+                <i class="fa-regular fa-circle-xmark"></i> Remove Product
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="button-container2">
+          <button
+            type="button"
+            (click)="addProductRequest()"
+            class="green-button"
+          >
+            Add Product
+          </button>
+          <button type="submit" class="red-button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div *ngIf="submitted">
+      <div class="thank-you">
+        Thank you for your request, we will contact you soon! 🏵️
+      </div>
+    </div>
+  </div>
+
+  <div class="padding-div">a</div>
+  <div class="footer-container">
+    <div class="footer">
+      <span>&copy; 2024 All rights reserved to Harshita Ramchandani</span>
+    </div>
+  </div>
+</div>
